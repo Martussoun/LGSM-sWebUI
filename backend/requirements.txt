@@ -1,0 +1,8 @@
+fastapi
+uvicorn
+python-dotenv
+pydantic
+argon2-cffi
+itsdangerous
+sqlmodel
+slowapi
