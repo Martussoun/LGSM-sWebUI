@@ -59,6 +59,11 @@ def login(data: LoginData, request: Request):
                 verify_password(None, data.password)
                 raise HTTPException(status_code=401, detail="Invalid credentials")
 
+            # CHECK IF REVOKED
+            if admin.revoked_access:
+                verify_password(None, data.password)
+                raise HTTPException(status_code=403, detail="Access revoked")
+
             # LOCK CHECK
             if admin.is_locked:
                 if admin.locked_until and datetime.now(timezone.utc).replace(tzinfo=None) < admin.locked_until:
