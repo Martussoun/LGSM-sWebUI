@@ -31,25 +31,26 @@ Designed for Ubuntu 24.04 LTS servers, also tested on Rocky 9.8 minimal
 1. **Clone the repository:**
 
     
-    `git clone https://github.com/Martussoun/LGSM-sWebUI`
+    <pre>git clone https://github.com/Martussoun/LGSM-sWebUI </pre>
     
 2. **Set up the environment:**
 
-    `cd LGSM-sWebUI`
+
+    <pre>cd LGSM-sWebUI
    
-    `python3 -m venv venv_swui`
+    python3 -m venv venv_swui
    
-    `source venv_swui/bin/activate`
+    source venv_swui/bin/activate
    
-    `pip install -r requirements.txt`
+    pip install -r requirements.txt</pre>
     
 4. **Install your ASGI server of choice(uvicorn example):**
 
-	`pip install uvicorn`
+	<pre>pip install uvicorn</pre>
 		
 5. **Initialize the Database:**
     
-    `python3 backend/db/init_db.py`
+    <pre>python3 backend/db/init_db.py</pre>
 
    Add an admin from the menu, minimum password length is 10 characters
 
@@ -61,7 +62,7 @@ Designed for Ubuntu 24.04 LTS servers, also tested on Rocky 9.8 minimal
     
      > Replace IP and PORT with your desired values
    
-     `uvicorn backend.app.main:app --reload --host <IP> --port <PORT> > swui.log 2>&1 &`
+     <pre>uvicorn backend.app.main:app --reload --host <IP> --port <PORT> > swui.log 2>&1 &</pre>
     
 8. **Connect via browser**
 
