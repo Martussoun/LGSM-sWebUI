@@ -62,7 +62,7 @@ Designed for Ubuntu 24.04 LTS servers, also tested on Rocky 9.8 minimal
     
      > Replace IP and PORT with your desired values
    
-     <pre>uvicorn backend.app.main:app --reload --host <IP> --port <PORT> > swui.log 2>&1 &</pre>
+     <pre>uvicorn backend.app.main:app --reload --host IP --port PORT > swui.log 2>&1 &</pre>
     
 8. **Connect via browser**
 
