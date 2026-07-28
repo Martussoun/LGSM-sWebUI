@@ -1,6 +1,6 @@
 # LGSM-sWebUI
 
-A lightweight web interface designed to manage existing LinuxGSM servers, mainly intended for use locally or via LAN.
+A lightweight web interface with FastAPI backend and React frontend(currently only statically served by the backend) designed to manage existing LinuxGSM servers, mainly intended for use locally or via LAN.
 Designed for Ubuntu 24.04 LTS servers, also tested on Rocky 9.8 minimal
 ##  Features
 
